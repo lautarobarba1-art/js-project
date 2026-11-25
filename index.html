@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taro Coffee</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Welcome to Taro Coffee</h1>
+    <p>We serve the best coffee in town!</p>
+    <h2>Te mostrámos nuestro catalogo de productos:</h2>
+
+    <p id="cotizacion-dolar" class="cargando">
+        Cargando cotización a dolar...
+    </p>
+    
+    <div class="filtros-menu">
+        <button type="button" data-filtro="todos">Todo</button>
+        <button type="button" data-filtro="cafe">Café</button>
+        <button type="button" data-filtro="productos">Para acompañar</button>
+
+    </div>
+
+    <div class="categorias-menu" id="menu-cafeteria">
+
+    <section data-categoria="cafe">
+        <h3>Café de especialidad</h3>
+        <ul id="lista-cafes"></ul>
+
+    </section>
+
+    <section data-categoria="productos">
+    <h3>y para acompañar...</h3>
+    <ul id="lista-productos"></ul>
+</section>
+    </div>
+
+<section>
+    <h2>Contacto</h2>
+
+    <form id="form-contacto" novalidate>
+        <label for="nombre">Nombre</label>
+        <input id="nombre" name="nombre" type="text";>
+        <p id="error-nombre"></p>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email";>
+        <p id="error-email"></p>
+
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje"></textarea>
+        <p id="error-mensaje"></p>
+
+        <button type="submit">Enviar</button>
+        <p id="respuesta-formulario"></p>
+
+    </form>
+
+</section>
+
+</body>
+</html>
